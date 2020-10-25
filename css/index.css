@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import "./reset.css";
+
+
+.mine {
+    padding-top: 50px;
+}
+
+.level {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0;
+}
+
+.level button {
+    margin: 0 4px;
+    padding: 5px 15px;
+    background-color: #02a4ad;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.level button.active {
+    background-color: #00abff;
+}
+.gamebox {
+    font-size: 0;
+    text-align: center;
+}
+.gamebox div {
+    display: inline-block;
+    background-color: #929196;
+}
+.gamebox ul:nth-child(n+2) {
+    margin-top: 1px; 
+}
+
+.gamebox ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.gamebox ul li {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 1px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border: 2px solid; 
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+}
+.gamebox ul li:first-child {
+    margin-left: 0;
+}
+
+.gamebox ul li.bg-mine {
+    background: #d9d9d9 url("../img/mine.ico") no-repeat center/80% auto;
+}
+.gamebox ul li.flag {
+    background: #ccc url("../img/小旗子.png") no-repeat center/80% auto;
+}
+
+.gamebox ul li.zero {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+}
+.gamebox ul li.one {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #0332fe;
+}
+.gamebox ul li.two {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #3fffbf;
+}
+.gamebox ul li.three {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #019f02;
+}
+.gamebox ul li.four {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #ff7f29;
+}
+.gamebox ul li.five {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #93208f;
+}
+.gamebox ul li.six {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #f40;
+}
+.gamebox ul li.seven {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #f00;
+}
+
+.gamebox ul li.eight {
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #93208f;
+}
+
+
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.info .minenum {
+    color: #f40;
+    display: inline-block;
+    width: 22px;
+    font-size:20px;
+    vertical-align: -2px;
+}
+
+
+
